@@ -11,15 +11,92 @@
         <li>Products</li>
         <li>Orders</li>
         <li>Contact</li>
-        <a href="../HTML/Index.html"><img src="../Images/Shmamazon.png" class="Shmamazon"></a>
-        <img src="../Images/cart.png" class="icon"></a>
-        <img src="../Images/profile.png" class="icon2"></a>
+        <a href="../HTML/Index.html"><img src="../Images/Shmamazon.png" class="Shmamazon3"></a>
+        <img src="../Images/cart.png" class="icon"></img>
+        <img src="../Images/profile.png" class="icon2"></img>
+        <form action="../HTML/checkout.html">
+          <input type="search" placeholder="What are you shopping for today?"></input>
+          <input type="submit" value="Submit"></input>
+        </form>
       </ul>
     </nav>
   </head>
   <body>
     <div class="checkout">
       <p>Products > Electronics > Tablet</p>
+      <div class="payinfo floatbox">
+        <h1>Checkout</h1>
+        <h3>1. Enter Shipping Information</h3>
+        <form>
+          <input type="search" placeholder="First Name"></input>
+          <input type="search" placeholder="Last Name"></input>
+          <input type="search" placeholder="Street Address"></input><br>
+          <input type="search" placeholder="City/State/Zip"></input>
+        </form>
+        <h3>2. Payment Method</h3>
+        <form>
+          <input type="radio" name="answer" value="female"></input>
+          <img src="../Images/AMEX.png" class="credcard"></img>
+          <img src="../Images/MASTER.png" class="credcard"></img>
+          <img src="../Images/VISA.png" class="credcard"></img>
+          <img src="../Images/OTHER.png" class="credcard"></img>
+          <input type="radio" name="answer" value="female"></input>
+          <img src="../Images/PAYPAL.png" class="credcard"></img><br>
+          <input type="search" placeholder="Name on Card"></input><br>
+          <input type="search" placeholder="Card Number"></input>
+          <input type="search" placeholder="CV Code"></input>
+        </form>
+          <h4>Card Expiration</h4>
+          <select>
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+          </select>
+          <select>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+          </select>
+        <h3>3. Review Items</h3>
+        <img src="../Images/tablet.png" class="reviewpic floatbox"></img>
+        <p class="floatbox">Google Nexus Tablet<br>Manufacturer: Google<br>Quantity:
+          <select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </p>
+      </div>
+      <div class="placeorder floatbox">
+        <form>
+          <input type="submit" value="Place Order"></input>
+          <p>By placing your order, you agree to Shmamazon's privacy notice and conditions of use.</p>
+          <hr>
+          <h3>Order Summary</h3>
+          <p>Items: <span style="text-align: right;">$799.00</span><br>
+            Shipping & Handling: <span style="text-align: right;">$1.00</span><br>
+            Tax: <span style="text-align: right;">$9.35</span>
+          </p>
+          <hr>
+          <h3>Total: <span style="color: #000;">$809.35</span></h3>
+          <p>Estimated delivery for the products is 1 week from order date.</p>
+        </form>
+      </div>
+
     </div>
 
     <footer>
